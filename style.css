@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
+}
+
+.navContainer {
+    width: 100vw;
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+nav {
+    width: 100%;
+    /* padding-right: 1rem; */
+    position: sticky;
+
+}
+
+#nav-logo img {
+    width: 120px;
+    height: 150px;
+    cursor: pointer;
+    transition: all 2s linear 0s;
+}
+#nav-logo img:hover{
+    width: 130px;
+    height: 160px;
+}
+
+
+.nav-list {
+    width: 100%;
+    padding: 18px;
+    list-style: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-items a {
+    padding-right: 30px;
+    text-decoration: none;
+    color: azure;
+    transition: all 1s ease-out 0s;
+}
+
+.nav-items a:hover{
+font-size: 1.6rem;
+color:  #30cfd0;
+text-shadow: 1px 1px green;
+}
+
+.itself {
+    color: azure;
+    background-color: #30cfd0;
+    padding: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+
+.foot {
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
+    font-size: 1.4rem;
+    color: azure;
+}
+
+.contentBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 20px; */
+    padding-left: 80px;
+
+}
+
+.leftBox {
+    width: 50%;
+    height: 100%;
+
+}
+
+.rightBox {
+    width: 50%;
+    padding-left: 100px;
+    transition: all 3s linear 0s;
+    position: relative;
+   
+}
+.rightBox img{
+    
+}
+
+.rightBox:hover{
+    transform: scale(1.05);
+}
+
+.leftBox .h21 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(223, 202, 13, 0.932);
+}
+
+.leftBox .h22 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(245, 244, 241, 0.932);
+    padding-bottom: 25px;
+}
+
+.leftBox p {
+    color: rgb(190, 196, 202);
+    font-size: 1.2rem;
+}
+
+.leftBox form .formstyle {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.sc{
+    color:rgba(223, 202, 13, 0.932);
+}
+
+.leftBox form .formstyle input {
+    padding: 12px;
+    width: 45%;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
+    transition: all 2s linear 0s;
+}
+
+.leftBox form .formstyle input:hover{
+    border: 2px solid rgb(148, 52, 148);
+    box-shadow: 4px 4px 3px #9777be;
+
+}
+
+
+.leftBox form .formstyle button {
+    padding: 12px;
+    width: 25%;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.4rem;
+    background-color: rgba(223, 202, 13, 0.932);
+    transition: all 2s linear 0s;
+
+}
+.leftBox form .formstyle button:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 4px 3px #9777be;
+    
+}
+
+/* Your existing CSS styles */
+
+/* New styles for responsiveness */
+@media screen and (max-width: 768px) {
+    .contentBox {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .leftBox,
+    .rightBox {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .leftBox form .formstyle input {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-items a {
+        padding: 10px;
+    }
+
+    .leftBox form .formstyle button {
+        width: 100%;
+    }
+}
+
+/* Your existing CSS styles */
+
+/* New styles for responsiveness */
+/* Your existing CSS styles */
+
+/* New styles for responsiveness */
+@media screen and (max-width: 1261px) {
+    /* Styles for 1261px to 768px screen width */
+
+    .nav-list {
+        justify-content: center;
+    }
+
+    .nav-items a {
+        padding: 10px 15px;
+    }
+
+    .leftBox,
+    .rightBox {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .leftBox .h21,
+    .leftBox .h22,
+    .leftBox p {
+        text-align: center;
+    }
+
+    .leftBox form .formstyle input {
+
+        width: 50%;
+    }
+
+    .leftBox form .formstyle button {
+        width: 25%;
+    }
+
+    .rightBox img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+    /* Styles for 530px and below screen width */
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-items a {
+        padding: 10px;
+    }
+
+    .leftBox form .formstyle input {
+        width: 100%;
+    }
+
+    .leftBox form .formstyle button {
+        margin-left: 29%;
+        width: 50%;
+    }
+
+    .leftBox,
+    .rightBox {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .rightBox img {
+        width: 100%;
+    }
+}
+
+
+/* Your existing CSS styles */
