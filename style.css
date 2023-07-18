@@ -180,6 +180,27 @@ text-shadow: 1px 1px green;
 
 /* New styles for responsiveness */
 @media screen and (max-width: 768px) {
+   
+
+    .nav-items a {
+        padding: 10px;
+        text-decoration: none;
+        color: azure;
+        transition: all 1s ease-out 0s;
+    }
+
+    .nav-items a:hover {
+        font-size: 1.6rem;
+        color: #30cfd0;
+        text-shadow: 1px 1px green;
+    }
+
+   
+    #menu-icon {
+        display: block; /* Show the Material Icons menu icon */
+        font-size: 2rem;
+        cursor: pointer;
+    }
     .contentBox {
         flex-direction: column;
         padding-left: 20px;
@@ -260,10 +281,10 @@ text-shadow: 1px 1px green;
 @media screen and (max-width: 530px) {
 
     /* Styles for 530px and below screen width */
-    .nav-list {
+    /* .nav-list {
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
     .nav-items a {
         padding: 10px;
@@ -289,5 +310,3 @@ text-shadow: 1px 1px green;
     }
 }
 
-
-/* Your existing CSS styles */
